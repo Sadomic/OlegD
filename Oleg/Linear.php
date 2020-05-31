@@ -14,6 +14,6 @@ class Linear
 
 			return array($x);
 		}
-		throw new OlegException("The equation is not");
+		throw new DobriogloException("The equation is not");
 	}
 }

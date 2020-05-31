@@ -10,6 +10,8 @@ include_once 'Oleg/Log.php';
 
 $arr=array();
 
+Alex\Log::log('Version '.file_get_contents('./version'));
+
 $arr[] = readline("a= ");
 $arr[] = readline("b= ");
 $arr[] = readline("c= ");
@@ -20,7 +22,7 @@ try {
 
     Alex\Log::log("roots: " . implode(" , ", $roots));
    
-}catch(Alex\BuryaException $e) {
+}catch(Alex\DobriogloException $e) {
 
     Alex\Log::log($e->getMessage());
 }
