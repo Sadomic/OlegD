@@ -1,5 +1,5 @@
 <?php
 namespace Oleg;
-class DobriogloException extends RuntimeException
+class DobriogloException extends \RuntimeException
 {
 }
